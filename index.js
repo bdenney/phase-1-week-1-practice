@@ -9,6 +9,31 @@ function getRandomSighting() {
     return UFO_SIGHTINGS[Math.floor(Math.random() * UFO_SIGHTINGS.length)];
 }
 
+function getRandomSightings(number) {
+    let randomSightings = [];
+    for (let i = 0; i < number; i++) {
+        randomSightings.push(getRandomSighting());
+    }
+    return randomSightings;
+}
+
+let random = getRandomSightings(4);
+console.log(random)
+
+function getLongestSighting(sightings) {
+    return sightings.reduce((previous, current) => {
+        return current.duration > previous.duration ? current : previous;
+    });
+}
+
+function getComment(sighting) {
+    return sighting.comments;
+}
+
+function getFirstWordInComment(sighting) {
+    return getComment(sighting).split(' ')[0];
+}
+
 function shapeTypes() {
     return UFO_SIGHTINGS.reduce((result, sighting) => {
         if (!result.includes(sighting.shape)) {
