@@ -8,6 +8,8 @@ Core concepts:
 * Iteration, Loops
 * Map, Filter, Find
 
+Write your code in `index.js`. You can see the `console.log()` output by using `node index.js` in the terminal from this directory.
+
 ---
 ## UFO Sighting Object
 
@@ -29,7 +31,15 @@ The dataset for this practice can be found in `nyc-ufo-sightings.json`. It is an
 
 * Write a function called `calculateMinutes` that takes in an argument called `seconds` and coverts returns how many minutes it is equal to, rounding down.
 
-* Write a function called `getRandomSighting()` that returns a **random** ufo sighting object from the `UFO_SIGHTINGS` dataset. If you need help or a hint, [click here](https://stackoverflow.com/questions/4550505/getting-a-random-value-from-a-javascript-array).
+* Write a function called `getRandomSighting` that returns a **random** ufo sighting object from the `UFO_SIGHTINGS` dataset. If you need help or a hint, [click here](https://stackoverflow.com/questions/4550505/getting-a-random-value-from-a-javascript-array).
+
+* Write a function called `getRandomSightings` that takes a number as an argument and returns an array with that many random sightings.
+
+* Write a function called `getLongestSighting` that takes in an array of ufo sightings and returns the longest one.
+
+* Write a function called `getComment` that takes in a ufo sighting object as an argument and returns the comment as a string.
+
+* Write a function called `getFirstWordInComment` that takes a ufo sighting object as an argument and returns the first word in the commnent.
 
 * Write a function called `shapeTypes` that returns an array of all the different shapes that are present in the `UFO_SIGHTINGS`. There should only be one copy of each shape in the returned array (no duplicates). 
 
